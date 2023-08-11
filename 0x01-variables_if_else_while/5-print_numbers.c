@@ -1,22 +1,16 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- * main - prints the alphabet in lowercase,
- * followed by a new line, omits q and e
- * Return: Aways 0 (Sucess)
+ * main - prints all single digit numbers of base
+ * 10 starting from 0, followed by a new line
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char i = 'a';
+	int n;
 
-	while (i <= 'z')
-	{
-		if (i != 'e' && i != 'q')
-		{
-			putchar(i);
-		}
-		i++;
-	}
-	putchar('\n');
+	for (n = 0; n < 10; n++)
+		printf("%d", n);
+	printf("\n");
 	return (0);
 }
