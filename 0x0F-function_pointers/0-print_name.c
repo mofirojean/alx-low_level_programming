@@ -1,14 +1,14 @@
+#include <stdio.h>
 #include "function_pointers.h"
 
 /**
- * print_name - print a name in uppercase
- * @name: name of the person
- * @f: a function pointer
- *
- * Return: Nothing.
+ * print_name - Print a name from a function pointer
+ * @name: char string
+ * @f: function pointer that takes a string argument
  */
 
 void print_name(char *name, void (*f)(char *))
 {
 	f(name);
 }
+
